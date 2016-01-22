@@ -21,6 +21,7 @@ span {
 }
 h3 {
   text-transform:uppercase;
+  font-weight: 500;
 }
 h4 {
   font-weight: 500;
@@ -30,9 +31,13 @@ ul {
     padding: 0;
     margin: 0;
 }
+a {
+  text-decoration: none;
+  color:#7f8c8c;
+}
 
 .section-wrap {
-    max-width: 950px;
+    max-width: 1010px;
     margin: 0 auto;
     padding: 0 7%;
 }
@@ -428,14 +433,110 @@ NEWS SECTION
   color: #6F9C95;
 }
 /*****************************************
+SUBFOOTER TAIL SECTION
+*****************************************/
+.subfooter-tail-section {
+  margin: 124px 0 0;
+}
+
+.subfooter-tail-img {
+  max-width:100%;
+  float: left;
+}
+
+/*****************************************
+SUBFOOTER SECTION
+*****************************************/
+.subfooter-section {
+  padding: 16px;
+}
+.subfooter-col {
+  width: 50%;
+  float: left;
+  padding-right: 4%;
+}
+
+/*****************************************
 ABOUT SECTION
 *****************************************/
+.about-col{}
+.about-h4{}
+.about-p{
+    font-size: .8em;
+    line-height: 1.9em;
+}
+.about-ul{}
+.about-li{
+    float: left;
+    color: #f1cdbc;
+    margin: 0 3px;
+    font-size: .83em;
+}
+.about-a {
+  color: #f1cdbc;
+}
 
+
+
+/*****************************************
+PRODUCTS SECTION
+*****************************************/
+.products-col{padding-right:0;}
+.products-ul{float:left;width: 50%;padding-right: 4%;}
+.products-li {
+  color: #f1cdbc;
+  text-transform: uppercase;
+  font-size: .8em;
+  line-height: 2.2em;
+  font-weight: 500;
+}
+.products-arrow {
+  color: #c8d8d7;
+}
+.subscribe-input {margin: 24px 4% 0 0;height: 29px;width: 60%;}
+.subscribe-button {
+  width: 34%;
+  padding: 7px 16px;
+  font-size: .8em;
+  font-weight: 600;
+}
 
 /*****************************************
 FOOTER 
 *****************************************/
+footer {
+  background: #b56642;
+  height: 43px;
+}
 
+/*****************************************
+COPYRIGHT
+*****************************************/
+.copyright {
+  float:left;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 43px;
+}
+
+/*****************************************
+SOCIAL
+*****************************************/
+.social-ul {
+  float:right;
+  margin-top: 12px;
+}
+
+.social-li{
+  float:left;
+  width: 28px;
+}
+.social-a {
+    display: block;
+}
+.social-img {
+  
+}
 
 /*****************************************
 ******************************************
