@@ -24,8 +24,7 @@ body {
     font-weight: 300;
 }
 
-p,
-span {
+p {
     font-weight: 300;
 }
 
@@ -212,15 +211,19 @@ BANNER SECTION
 .banner-tail {
     max-width: 100%;
 }
+.banner-img-mobile {
+    display:none;
+}
 
 .banner-arrow {
     z-index: 2;
     top: 41%;
-    /*height: 65px;
-  width: 55px;*/
     border-bottom: 3px solid #b56642;
     font-size: 4em;
     padding: 0 15px;
+}
+.banners-collection {
+    padding: 0 4%;
 }
 
 .banner-arrow-left {
@@ -246,7 +249,6 @@ BANNER TEXT
 
 .banner-text-container {
     top: 11%;
-    padding-left: 31px;
 }
 
 .banner-text {
@@ -289,11 +291,11 @@ PROMO SECTION
 }
 
 .promo-h3 {
-    height: 42px;
+    height: 19px;
 }
 
 .promo-p {
-    margin: 20px 0 30px;
+    margin: 20px 0 7px;
     line-height: 1.5em;
     height: 96px;
 }
@@ -323,7 +325,7 @@ SUPPORT SECTION
 
 .button-live-chat {
     float: right;
-    margin: 6px 0 0;
+    margin: 6px 0 0 16px;
 }
 
 
@@ -365,7 +367,8 @@ REVIEWS SECTION
 
 .reviews-h3 {
     text-align: center;
-    line-height: 86px;
+    position: relative;
+    top: 20px;
 }
 
 .reviews-heading-section {
@@ -433,7 +436,11 @@ REVIEWS SECTION
 /*****************************************
 NEWS SECTION
 *****************************************/
-
+.news-h3 {
+    margin-top: -69px;
+    position: relative;
+    z-index: 2;
+}
 .news-col {
     width: 33.33333333333%;
     float: left;
@@ -451,7 +458,6 @@ NEWS SECTION
 }
 
 .news-text {
-    /* padding: 0 15px; */
     padding: 0px 9%;
     position: relative;
 }
@@ -492,7 +498,7 @@ SUBFOOTER TAIL SECTION
 *****************************************/
 
 .subfooter-tail-section {
-    margin-top: 124px;
+    margin-top: 54px;
 }
 
 .subfooter-tail-img {
@@ -535,7 +541,7 @@ ABOUT SECTION
     float: left;
     color: #f1cdbc;
     margin: 0 3px;
-    font-size: .83em;
+    font-size: .74em;
 }
 
 .about-a {
@@ -679,7 +685,7 @@ MEDIA QUERIES
   HEADER
   **************************************/
     .header-nav {
-        width: 381px;
+        width: 428px;
     }
     .header-nav-a {
         font-size: .8em;
@@ -701,8 +707,19 @@ MEDIA QUERIES
         display: none;
     }
     .banner-img {
-        opacity: 0;
         display: none;
+    }
+    .banner-img-mobile {
+        display:block;
+        width: 57%;
+        max-width: 236px;
+        margin: 0 auto;
+        position: relative;
+        top: -5px;
+        z-index: 0;
+    }
+    .banner-li {
+        display:none;
     }
     .banner-text-container {
         position: static;
@@ -713,6 +730,8 @@ MEDIA QUERIES
     }
     .banner-text {
         margin: 5px;
+        position: relative;
+        z-index: 2;
     }
     /**************************************
   SUPPORT
@@ -734,7 +753,7 @@ MEDIA QUERIES
   REVIEWS
   **************************************/
     .reviews-section {
-        margin-top: 43px;
+        margin-top: 19px;
     }
     .reviews-li {
       width: 48%;
@@ -765,6 +784,20 @@ MEDIA QUERIES
     .news-info {
         font-size: .58em;
         padding: 9px 0;
+    }
+
+    /**************************************
+  FOOTER
+  **************************************/
+    .copyright {
+        font-size: .3em;
+    }
+    .social-li {width: 21px;}
+    .social-a {
+        
+    }
+    .social-img {
+        width: 17px;
     }
 }
 
@@ -798,9 +831,8 @@ MEDIA QUERIES
   .header-bottom {
     height: 134px;
   }
-  .header-nav-ul {
-  /* width: 367px; */
-  max-width: 98%;
+  .header-nav {
+    width: 100%;
   }
   .header-nav-li {
     width:33.3333333333%;
@@ -812,11 +844,16 @@ MEDIA QUERIES
   /**************************************
   BANNER
   **************************************/
+    .banner-text-container {
+        max-width: 100%;
+    }
     .banner-text {
         font-size: .8em;
+        margin: 0px;
     }
     h3.banner-text {
         font-size: 1.1em;
+        margin-bottom: 15px;
     }
     .news-col.third {
         display: none;
@@ -830,6 +867,37 @@ MEDIA QUERIES
     .subfooter-tail-section {
         margin-top: 51px;
     }
+
+/**************************************
+  SUPPORT
+  **************************************/
+    .support-h2 {
+        font-size: 1.2em;
+    }
+    .mobile-500-hide {
+        display:none;
+    }
+    /**************************************
+  REVIEWS
+  **************************************/
+    .reviews-h3 {
+        top: 0px;
+    }
+
+    /**************************************
+  PRODUCTS
+  **************************************/
+    .products-li {
+        font-size: .7em;
+    }
+    .subscribe-input {
+        font-size: .9em;
+        height: 30px;
+    }
+    .subscribe-button {
+        padding: 7px 7px;
+    }
+
   /**************************************
   COLUMNS
   **************************************/
@@ -844,6 +912,7 @@ MEDIA QUERIES
     }
     .promo-h3 {
         margin: 5px;
+        height: 21px;
     }
     .promo-p {
         margin: 10px 0;
