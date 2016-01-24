@@ -637,16 +637,22 @@ HEADER BOTTOM
 BANNER SECTION
 *****************************************/
 
-.banner-section {
+.banner-section, .banner-section-mobile {
     background: #c8d8d7;
+    position:relative;
 }
 
 .banner-img,
 .banner-tail {
     max-width: 100%;
 }
-.banner-img-mobile {
+
+.banner-section-mobile, .banner-section-noscript {
     display:none;
+    
+}
+.banner-section-mobile {
+  padding: 4%;
 }
 
 .banner-arrow {
@@ -654,7 +660,7 @@ BANNER SECTION
     top: 41%;
     border-bottom: 3px solid #b56642;
     font-size: 4em;
-    padding: 0 15px;
+    padding: 0 7px;
 }
 .banners-collection {
     padding: 0 4%;
@@ -687,7 +693,7 @@ BANNER TEXT
 
 .banner-text {
     text-transform: uppercase;
-    background: #8c9796;
+    
     padding: 4px 6px;
     margin-top: 10px;
     font-size: .9em;
@@ -700,11 +706,16 @@ BANNER TEXT
     box-shadow: 3px 3px 0 #b6bfb6;
 }
 
-h3.banner-text {
+.banner-text-h3 {
     padding: 10px 14px;
     font-size: 1.25em;
 }
-
+.banner-panel1 {
+  background: #8c9796;
+}
+.banner-panel2 {
+  background: #A7A6A5;
+}
 
 /*****************************************
 PROMO SECTION
@@ -1137,6 +1148,10 @@ MEDIA QUERIES
     .banner-section {
         height: 226px;
         padding: 22px 0 0;
+        display:none;
+    }
+    .banner-section-mobile {
+      display:block;
     }
     .banner-arrow {
         display: none;
@@ -1167,6 +1182,15 @@ MEDIA QUERIES
         margin: 5px;
         position: relative;
         z-index: 2;
+    }
+    .banner-text-h3 {
+      background: #8c9796;
+      display:block;
+      width: 423px;
+      max-width: 100%;
+      text-align: center;
+      margin:0 auto;
+      float: none;
     }
     /**************************************
   SUPPORT
@@ -1279,17 +1303,9 @@ MEDIA QUERIES
   /**************************************
   BANNER
   **************************************/
-    .banner-text-container {
-        max-width: 100%;
-    }
-    .banner-text {
-        font-size: .8em;
-        margin: 0px;
-    }
-    h3.banner-text {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-        text-align: center;
+    .banner-text-h3 {
+      font-size: 1.2em;
+      margin: 0 0 4%;
     }
     .news-col.third {
         display: none;
